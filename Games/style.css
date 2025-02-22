@@ -1,0 +1,74 @@
+body {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(64, 64, 64, 1) 100%);
+}
+
+.navbar {
+    padding: 20px 0;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(64, 64, 64, 1) 100%);
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.2);
+}
+
+.navbar-nav {
+    margin: 0 auto;
+}
+
+.custom-col {
+    width: 300px; /* Define uma largura específica para a div */
+    height: 100px; /* Altura específica para manter o formato */
+  }
+
+/* Ajuste do tamanho da logo dentro da navbar */
+.navbar-brand img {
+    max-height: 50px; /* Altura máxima da logo */
+    width: auto;      /* Mantém a proporção da largura */
+}
+
+/* Centraliza os itens do menu */
+.navbar-nav {
+    margin: 0 auto;
+}
+
+/* Define uma largura específica para a div da logo Y2K na página */
+.custom-col {
+    width: 300px;
+    height: 155px;
+}
+
+/* Garante que a imagem preencha a div corretamente */
+.custom-col img {
+    width: 100%; /* A imagem ocupa 100% da largura da div */
+    height: 100%; /* A imagem ocupa 100% da altura da div */
+    object-fit: cover; /* Ajusta a imagem sem distorção */
+}
+
+.navbar-brand{
+    margin-left: 0;
+}
+
+.carousel-item img {
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.carousel-caption h5 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.description {
+    margin-top: 20px;
+}
+
+.text-light {
+    color: #f8f9fa; /* Cor clara para o texto */
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffffff; /* Cor do título */
+}
+
+.card {
+    border-radius: 20px;
+}
