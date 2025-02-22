@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial - Futebol dos Anos 2000</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" href="../logos/Y2K.png" type="image/png">
+    <style>
+        body {
+            font-family: 'Orbitron', sans-serif;
+            background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(64,64,64,1) 100%);
+        }
+        .video-section, .curiosities-section, .gallery-section {
+            margin: 20px 0;
+            color: white;
+        }
+        h1, h2, h3 {
+            color: white; /* Define a cor desejada para todos os títulos */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="../PaginaInicial/"><img src="../logos/Y2K.png" alt="Logo Y2K"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../PaginaInicial/index.HTML">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Sobre/sobre.html">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../TelaQuiz/quiz2.html">Quiz</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Contato/index.html">Contato</a>
+                </li>
+            </ul>
+            <div class="d-flex">
+                <a href="../Login/login.html" id="loginButton">
+                    <button class="btn btn-outline-light me-2" type="button">Login</button>
+                </a>
+                <a href="../Cadastro/cadastro.HTML" id="registerButton">
+                    <button class="btn btn-light" type="button">Cadastro</button>
+                </a>
+                <div id="userIcon" style="display:none;">
+                    <a href="../Perfil/usuario.php" class="btn btn-light d-flex align-items-center">
+                        <i class="fas fa-user-circle text-dark" style="font-size: 1.5em; margin-right: 5px;"></i>
+                        <span id="username"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <br>
+
+    <div class="container">
+        <h1>Futebol dos Anos 2000</h1>
+        <p style="color: white;">Reviva os momentos mais emocionantes do futebol da década de 2000, com vídeos, curiosidades e fotos que marcaram essa era.</p>
+
+
+        <div class="video-section">
+            <h2>Momentos Inesquecíveis</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <video width="100%" height="215" controls>
+                        <source src="vd1.mp4" type="video/mp4">
+                        Seu navegador não suporta o vídeo.
+                    </video>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <video width="100%" height="215" controls>
+                        <source src="vd2.mp4" type="video/mp4">
+                        Seu navegador não suporta o vídeo.
+                    </video>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <video width="100%" height="215" controls>
+                        <source src="vd3.mp4" type="video/mp4">
+                        Seu navegador não suporta o vídeo.
+                    </video>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <video width="100%" height="215" controls>
+                        <source src="vd4.mp4" type="video/mp4">
+                        Seu navegador não suporta o vídeo.
+                    </video>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <video width="100%" height="215" controls>
+                        <source src="vd5.mp4" type="video/mp4">
+                        Seu navegador não suporta o vídeo.
+                    </video>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <video width="100%" height="215" controls>
+                        <source src="vd6.mp4" type="video/mp4">
+                        Seu navegador não suporta o vídeo.
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <!-- Curiosidades -->
+        <div class="container mt-4">
+            <h3 class="text-white text-center mb-4" style="font-weight: bold;">Curiosidades da década</h3>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card bg-dark text-white" style="border-radius: 20px;">
+                        <div class="card-body">
+                            <h5 class="card-title" style="font-weight: bold;">O Brasil em 2002</h5>
+                            <p class="card-text">O Brasil conquistou seu quinto título mundial na Copa do Mundo de 2002, liderado por grandes estrelas como Ronaldo e Rivaldo.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card bg-dark text-white" style="border-radius: 20px;">
+                        <div class="card-body">
+                            <h5 class="card-title" style="font-weight: bold;">A Era das Torcidas Organizadas</h5>
+                            <p class="card-text">As torcidas organizadas se tornaram cada vez mais influentes e criativas, mudando a dinâmica das partidas e a atmosfera nos estádios.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card bg-dark text-white" style="border-radius: 20px;">
+                        <div class="card-body">
+                            <h5 class="card-title" style="font-weight: bold;">Tecnologia no Futebol</h5>
+                            <p class="card-text">A década de 2000 viu a introdução de novas tecnologias, como a análise de desempenho e as transmissões em alta definição, mudando a forma como assistimos aos jogos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card bg-dark text-white" style="border-radius: 20px;">
+                        <div class="card-body">
+                            <h5 class="card-title" style="font-weight: bold;">A Ascensão do Futebol Europeu</h5>
+                            <p class="card-text">Nos anos 2000, o futebol europeu se consolidou como o centro do futebol mundial, com ligas como a Premier League, La Liga e Serie A atraindo grandes talentos e investimentos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card bg-dark text-white" style="border-radius: 20px;">
+                        <div class="card-body">
+                            <h5 class="card-title" style="font-weight: bold;">O Impacto de Ronaldinho</h5>
+                            <p class="card-text">Ronaldinho, que se destacou no Barcelona e na seleção brasileira, ganhou o prêmio de Melhor Jogador do Mundo da FIFA em 2004 e 2005, encantando fãs com seu estilo de jogo mágico.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card bg-dark text-white" style="border-radius: 20px;">
+                        <div class="card-body">
+                            <h5 class="card-title" style="font-weight: bold;">Copa do Mundo de 2006</h5>
+                            <p class="card-text">A Copa do Mundo de 2006 na Alemanha foi marcada pela famosa "Cabeçada de Zidane" na final contra a Itália, que resultou em um cartão vermelho para o astro francês.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card bg-dark text-white" style="border-radius: 20px;">
+                        <div class="card-body">
+                            <h5 class="card-title" style="font-weight: bold;">O Fenômeno Ronaldo</h5>
+                            <p class="card-text">Ronaldo, conhecido como "Fenômeno", foi um dos jogadores mais influentes da década, conquistando a Copa do Mundo de 2002 e se tornando o artilheiro do torneio.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card bg-dark text-white" style="border-radius: 20px;">
+                        <div class="card-body">
+                            <h5 class="card-title" style="font-weight: bold;">Copa América de 2004</h5>
+                            <p class="card-text">O Brasil venceu a Copa América de 2004 no Peru, conquistando o título sob a liderança de estrelas como Cafu e Dida, reforçando sua hegemonia no futebol sul-americano.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card bg-dark text-white" style="border-radius: 20px;">
+                        <div class="card-body">
+                            <h5 class="card-title" style="font-weight: bold;">A Revolução dos Meias</h5>
+                            <p class="card-text">A década de 2000 viu o surgimento de meias criativos que mudaram a dinâmica do jogo, como Zé Roberto, Deco e Kaká, que se destacaram por sua visão de jogo e capacidade de passes decisivos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-section">
+            <h2>Galeria de Fotos</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="img2.jpg" class="img-fluid">
+                </div>
+                <div class="col-md-4">
+                    <img src="img1.jpg" class="img-fluid">
+                </div>
+                <div class="col-md-4">
+                    <img src="img3.jpg" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        
+        <div class="gallery-section">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="img4.jpg" class="img-fluid">
+                </div>
+                <div class="col-md-4">
+                    <img src="img6.jpg" class="img-fluid">
+                </div>
+                <div class="col-md-4">
+                    <img src="img5.jpeg" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    </div>
+    </div>
+    <br>
+    <br>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $.ajax({
+                type: 'GET',
+                url: '../ScriptsPHP/check_login.php',
+                dataType: 'json',
+                success: function(response) {
+                    if (response.status === 'logged_in') {
+                        $('#loginButton').hide();
+                        $('#registerButton').hide();
+                        $('#userIcon').show();
+                        $('#username').text(response.username);
+                    } else {
+                        $('#loginButton').show();
+                        $('#registerButton').show();
+                        $('#userIcon').hide();
+                    }
+                },
+                error: function() {
+                    console.log('Erro ao verificar o status de login');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
