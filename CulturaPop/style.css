@@ -1,0 +1,78 @@
+body {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(64, 64, 64, 1) 100%);
+    font-family: 'Orbitron', sans-serif; /* Aplicando a fonte Orbitron aqui também */
+}
+
+.navbar {
+    padding: 20px 0;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(64, 64, 64, 1) 100%);
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.2);
+}
+
+.navbar-nav {
+    margin: 0 auto;
+}
+
+/* Ajuste do tamanho da logo dentro da navbar */
+.navbar-brand img {
+    max-height: 50px; /* Altura máxima da logo */
+    width: auto;      /* Mantém a proporção da largura */
+}
+
+/* Centraliza os itens do menu */
+.navbar-nav {
+    margin: 0 auto;
+}
+
+/* Garante que a imagem preencha a div corretamente */
+.custom-col img {
+    width: 100%; /* A imagem ocupa 100% da largura da div */
+    height: 100%; /* A imagem ocupa 100% da altura da div */
+    object-fit: cover; /* Ajusta a imagem sem distorção */
+}
+
+.navbar-brand {
+    margin-left: 0;
+}
+
+.carousel-item video {
+    max-width: 100%; /* Garante que o vídeo não exceda a largura do contêiner */
+    height: 600px; /* Mantém a proporção do vídeo */
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.img-fluid2 {
+    max-width: 500px;
+    height: auto;
+    object-fit: cover;
+    max-height: 700px;
+}
+
+.row {
+    overflow: hidden;
+}
+
+.position-relative.z-3 {
+    position: relative;
+    z-index: 3;
+}
+
+.text-center {
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+.container.mt-4.text-center {
+    margin-bottom: 3rem;
+}
+
+.text-white {
+    color: white;
+}
+    
+.card-title, .card-text {
+    font-family: 'Orbitron', sans-serif;
+}
