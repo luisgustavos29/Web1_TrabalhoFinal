@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" href="../logos/Y2K.png" type="image/png">
+    <style>
+        body {
+            font-family: 'Orbitron', sans-serif; /* Aplica a fonte Orbitron a todo o corpo */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="../PaginaInicial/"><img src="../logos/Y2K.png" alt="Logo Y2K"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../PaginaInicial/index.HTML">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Sobre/sobre.html">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../TelaQuiz/quiz2.html">Quiz</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Contato/index.html">Contato</a>
+                </li>
+            </ul>
+            <div class="d-flex">
+                <a href="../Login/login.html" id="loginButton">
+                    <button class="btn btn-outline-light me-2" type="button">Login</button>
+                </a>
+                <a href="../Cadastro/cadastro.HTML" id="registerButton">
+                    <button class="btn btn-light" type="button">Cadastro</button>
+                </a>
+
+                <div id="userIcon" style="display:none;">
+                    <a href="../Perfil/usuario.php" class="btn btn-light d-flex align-items-center">
+                        <i class="fas fa-user-circle text-dark" style="font-size: 1.5em; margin-right: 5px;"></i>
+                        <span id="username"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seção de Contato -->
+    <div class="contact-section">
+        <div class="contact-info">
+            <div class="contact-person">
+                <i class="fab fa-instagram"></i> <span>@usuario1</span>
+                <i class="fab fa-whatsapp"></i> <span>(11) 91234-5678</span>
+                <i class="fab fa-linkedin"></i> <span>linkedin.com/in/usuario1</span>
+            </div>
+            <div class="contact-person">
+                <i class="fab fa-instagram"></i> <span>@usuario2</span>
+                <i class="fab fa-whatsapp"></i> <span>(11) 98765-4321</span>
+                <i class="fab fa-linkedin"></i> <span>linkedin.com/in/usuario2</span>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $.ajax({
+                type: 'GET',
+                url: '../ScriptsPHP/check_login.php',
+                dataType: 'json',
+                success: function(response) {
+                    if (response.status === 'logged_in') {
+                        $('#loginButton').hide();
+                        $('#registerButton').hide();
+                        $('#userIcon').show();
+                        $('#username').text(response.username);
+                    } else {
+                        $('#loginButton').show();
+                        $('#registerButton').show();
+                        $('#userIcon').hide();
+                    }
+                },
+                error: function() {
+                    console.log('Erro ao verificar o status de login');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
+
